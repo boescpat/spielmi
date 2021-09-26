@@ -1,0 +1,19 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: lawngreen;
+}
+.header-logo-text {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+h1 {
+    display: none;
+}
+nav {
+    display:flex;
+    align-items: baseline;
+    justify-content: end;
+    gap: 10px;
+}
