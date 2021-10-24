@@ -4,38 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpielMi.ch &mdash; Schweizer Outdoor Escape-Trails</title>
+    <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>-->
+    <link rel="canonical" href="https://spielmi.ch"/>
+    <meta property="og:site_name" content="SpielMi.ch - Outdoor Escape-Trails"/>
+    <meta property="og:title" content="SpielMi.ch - Outdoor Escape-Trails"/>
+    <meta property="og:url" content="https://spielmi.ch"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="Outdoor Escape-Trails in deiner Region. Das Beste aus Escape Rooms und Schnitzeljagdten für dich und deine Freunde oder Familie."/>
+    <meta itemprop="name" content="SpielMi.ch - Outdoor Escape-Trails"/>
+    <meta itemprop="url" content="https://spielmi.ch"/>
+    <meta itemprop="description" content="Outdoor Escape-Trails in deiner Region. Das Beste aus Escape Rooms und Schnitzeljagdten für dich und deine Freunde oder Familie."/>
+    <meta name="twitter:title" content="SpielMi.ch - Outdoor Escape-Trails"/>
+    <meta name="twitter:url" content="https://spielmi.ch"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:description" content="Outdoor Escape-Trails in deiner Region. Das Beste aus Escape Rooms und Schnitzeljagdten für dich und deine Freunde oder Familie."/>
+    <meta name="description" content="Outdoor Escape-Trails in deiner Region. Das Beste aus Escape Rooms und Schnitzeljagdten für dich und deine Freunde oder Familie." />
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-    <title>SpielMi.ch</title>
 </head>
 <body>
+    <link href="" rel="import-header-main">
     <header class="header-main">
         <img class="header-logo" src="img/Logo.svg" alt="Logo" style="width:90px;height: 110px;">
-        <h1 class="header-text"><span class=header-text-spiel>spiel</span><span class=header-text-mich>mi.ch</span></h1>
+        <p class="header-text"><span class=header-text-spiel>spiel</span><span class=header-text-mich>mi.ch</span></p>
         <nav class="header-nav">
-            <a href="" class="nav-link">Trails</a>
-            <a href="" class="nav-link">Wie's funktioniert</a>
-            <a href="" class="nav-link">Kontakt</a>
+            <a href="trails.html" class="nav-link nav-link-trails">Trails</a>
+            <a href="howto.html" class="nav-link nav-link-howto">Wie's funktioniert</a>
+            <a href="about.html" class="nav-link nav-link-about">Kontakt</a>
         </nav>
     </header>
+    <section class="intro">
+        <h1 class="main-header">Schweizer Outdoor Escape-Trails</h1>
+        <p class="desc-text">Intro-blabla <a class="in-text-link" href="howto.html"> blabla</a> bliblup <a class="in-text-link" href="trails.html">Trails</a></p>
+    </section>
     <section class="trails">
-        <div class="trail">
-            <img class="trail-pic" src="trail-pics/spraeggele-temp.jpg" alt="Spräggele" style="width:320px;height:240px">
-            <div class="trail-info">
-                <h4><b>Spräggele-Challenge</b></h4>
-                <p>Kannst du klein Spräggeli finden und retten?</p>
+        <h2 class="section-header">Aktuelle Trails</h2>
+        <p class="desc-text">Hier findest du eine Auswahl unserer <a class="in-text-link" href="trails.html">Trails</a>.</p>
+        <div class="trail-list">
+            <div class="trail">
+                <img class="trail-pic" src="trail-pics/spraeggele-temp.jpg" alt="Spräggele" style="width:320px;height:240px">
+                <div class="trail-info">
+                    <p>Ottenbach</p><!--Noch kleiner, ev. italic und grau... und dann nochmals schauen, ob es was ist.-->
+                    <h3><b>Spräggele-Challenge</b></h3>
+                    <p>Kannst du klein Spräggeli finden und retten?</p>
+                </div>
+            </div>
+            <div class="trail">
+                <img class="trail-pic" src="trail-pics/coming-soon.jpg" alt="Coming soon" style="width:320px;height:240px">
+                <div class="trail-info">
+                    <h3><b>Coming Soon</b></h3>
+                    <p>Weitere Trails werden demnächst hier aufgeschaltet.</p>
+                </div>
             </div>
         </div>
-        <div class="trail">
-            <img class="trail-pic" src="trail-pics/coming-soon.jpg" alt="Coming soon" style="width:320px;height:240px">
-            <div class="trail-info">
-                <h4><b>Coming Soon</b></h4>
-                <p>Weitere Trails werden demnächst hier aufgeschaltet.</p>
-            </div>
-        </div> 
     </section>
     <footer class="footer-main">
-        <p>Hello World</p>
+        <p class="footer-text">
+            <span class="copyright">&copy; Copyright: spielmi.ch</span> | <a class="footer-link" href="about.html">Kontakt</a> | <a class="footer-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
+        </p>
     </footer>
 </body>
 </html>

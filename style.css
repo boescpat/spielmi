@@ -15,7 +15,7 @@ body {
 }
 .header-text {
     margin: 40px 0px 0px;
-    background-color: lightskyblue;
+    background-color: rgb(135, 206, 250);
     padding: 5px 0px 0px 115px;
     font-family: 'Advent Pro', sans-serif;
 }
@@ -39,7 +39,7 @@ body {
     color: black;
 }
 
-.trails {
+.trail-list {
     margin: 0px 10px 35px;
     display:flex;
     justify-content: space-evenly;
@@ -67,8 +67,26 @@ body {
 }
 
 .footer-main {
-    /*position: fixed;
+    position: fixed;
     left: 0;
-    bottom: 0;*/
+    bottom: 0;
     width: 100%;
+    background-color: rgb(135, 206, 250);
+    padding: 0px 100px;
+    margin: 0px;
+}
+
+.footer-text {
+    font-size: 0.8em;
+    color: rgb(30, 30, 30);
+}
+
+.footer-link, .footer-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-link:hover, .footer-link:active {
+    text-decoration: underline;
+    color: rgb(6, 93, 147);
 }
