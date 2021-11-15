@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <link href="" rel="import-header-main">
-    <header class="header-main">
+    <header id="header-main"></header>
+    <!-- <header class="header-main">
         <img class="header-logo" src="img/Logo.svg" alt="Logo" style="width:90px;height: 110px;">
         <p class="header-text"><span class=header-text-spiel>spiel</span><span class=header-text-mich>mi.ch</span></p>
         <nav class="header-nav">
@@ -33,7 +33,7 @@
             <a href="howto.html" class="nav-link nav-link-howto">Wie's funktioniert</a>
             <a href="about.html" class="nav-link nav-link-about">Kontakt</a>
         </nav>
-    </header>
+    </header> -->
     <section class="intro">
         <h1 class="main-header">Schweizer Outdoor Escape-Trails</h1>
         <p class="desc-text">Intro-blabla <a class="in-text-link" href="howto.html"> blabla</a> bliblup <a class="in-text-link" href="trails.html">Trails</a></p>
@@ -42,21 +42,21 @@
         <h2 class="section-header">Aktuelle Trails</h2>
         <p class="desc-text">Hier findest du eine Auswahl unserer <a class="in-text-link" href="trails.html">Trails</a>.</p>
         <div class="trail-list">
-            <div class="trail">
+            <a href="trails/ottenbach.html" class="trail">
                 <img class="trail-pic" src="trail-pics/spraeggele-temp.jpg" alt="Spräggele" style="width:320px;height:240px">
                 <div class="trail-info">
                     <p>Ottenbach</p><!--Noch kleiner, ev. italic und grau... und dann nochmals schauen, ob es was ist.-->
                     <h3><b>Spräggele-Challenge</b></h3>
                     <p>Kannst du klein Spräggeli finden und retten?</p>
                 </div>
-            </div>
-            <div class="trail">
+            </a>
+            <a href="trails.html" class="trail">
                 <img class="trail-pic" src="trail-pics/coming-soon.jpg" alt="Coming soon" style="width:320px;height:240px">
                 <div class="trail-info">
                     <h3><b>Coming Soon</b></h3>
                     <p>Weitere Trails werden demnächst hier aufgeschaltet.</p>
                 </div>
-            </div>
+            </a>
         </div>
     </section>
     <footer class="footer-main">
@@ -64,5 +64,8 @@
             <span class="copyright">&copy; Copyright: spielmi.ch</span> | <a class="footer-link" href="about.html">Kontakt</a> | <a class="footer-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
         </p>
     </footer>
+    <script>
+        fetch("misc/header_main.html").then(x => x.text()).then(y => document.getElementById("header-main").innerHTML = y);
+    </script>
 </body>
 </html>
