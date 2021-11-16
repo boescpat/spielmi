@@ -28,6 +28,7 @@
 </head>
 <body>
     <header id="header-main"></header>
+    <p class="breadcrumb"> <a href="index.html" class="small-link">SpielMi.ch</a> &gt; Trails</p>
 
     <section class="trails">
         <h1 class="section-header">Unsere Trails</h1>
@@ -51,5 +52,11 @@
     </section>
 
     <footer id="footer-main"></footer>
+
+    <script> // Mass-Customizations
+        window.addEventListener("loaded", function () {
+            document.getElementById("nav-link-trails").bold();
+        });
+    </script>
 </body>
 </html>

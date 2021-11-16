@@ -17,7 +17,6 @@ body {
     overflow: hidden;
     background-color: white;
     position: relative;
-    margin-bottom: 35px;
 }
 .header-logo {
     position:absolute;   
@@ -81,19 +80,13 @@ body {
     z-index: 2;
     cursor: pointer;
 }
-.trail-title-container {
+.breadcrumb {
     background-color: gainsboro;
     width: 100%;
     margin: 0px;
-    padding: 10px 10px 8px 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.trail-title {
-    color: #333;
-    margin: 0px;
-    padding: 0px;
-    font-size: 18px;
+    padding: 7px 10px 5px 10px;
+    color: rgb(100, 100, 100);
+    font-size: 0.8em;
     font-weight: normal;
 }
 
@@ -111,11 +104,11 @@ body {
     font-size: 0.8em;
     color: rgb(30, 30, 30);
 }
-.footer-link, .footer-link:visited {
+.small-link, .small-link:visited {
     text-decoration: none;
     color: inherit;
 }
-.footer-link:hover, .footer-link:active {
+.small-link:hover, .small-link:active {
     text-decoration: underline;
     color: rgb(6, 93, 147);
 }
@@ -157,7 +150,7 @@ body {
         font-size: 25px;
         border-bottom: 0px;
     }
-    .burger-button, .trail-title-container {
+    .burger-button, .breadcrumb {
         display: none;
     }
 
