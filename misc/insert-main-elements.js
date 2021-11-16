@@ -1,0 +1,2 @@
+fetch("misc/header-main.html").then(x => x.text()).then(y => document.getElementById("header-main").innerHTML = y);
+fetch("misc/footer-main.html").then(x => x.text()).then(y => document.getElementById("footer-main").innerHTML = y);

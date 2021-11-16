@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpielMi.ch &mdash; Schweizer Outdoor Escape-Trails</title>
     <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>-->
+    <!--SEO-Header-->
     <link rel="canonical" href="https://spielmi.ch"/>
     <meta property="og:site_name" content="SpielMi.ch - Outdoor Escape-Trails"/>
     <meta property="og:title" content="SpielMi.ch - Outdoor Escape-Trails"/>
@@ -20,20 +21,14 @@
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:description" content="Outdoor Escape-Trails in deiner Region. Das Beste aus Escape Rooms und Schnitzeljagdten für dich und deine Freunde oder Familie."/>
     <meta name="description" content="Outdoor Escape-Trails in deiner Region. Das Beste aus Escape Rooms und Schnitzeljagdten für dich und deine Freunde oder Familie." />
+    <!--Content-Header-->
     <link href='https://fonts.googleapis.com/css?family=Advent Pro' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <script src="misc/insert-main-elements.js"></script>
 </head>
 <body>
     <header id="header-main"></header>
-    <!-- <header class="header-main">
-        <img class="header-logo" src="img/Logo.svg" alt="Logo" style="width:90px;height: 110px;">
-        <p class="header-text"><span class=header-text-spiel>spiel</span><span class=header-text-mich>mi.ch</span></p>
-        <nav class="header-nav">
-            <a href="trails.html" class="nav-link nav-link-trails">Trails</a>
-            <a href="howto.html" class="nav-link nav-link-howto">Wie's funktioniert</a>
-            <a href="about.html" class="nav-link nav-link-about">Kontakt</a>
-        </nav>
-    </header> -->
+    
     <section class="intro">
         <h1 class="main-header">Schweizer Outdoor Escape-Trails</h1>
         <p class="desc-text">Intro-blabla <a class="in-text-link" href="howto.html"> blabla</a> bliblup <a class="in-text-link" href="trails.html">Trails</a></p>
@@ -59,13 +54,7 @@
             </a>
         </div>
     </section>
-    <footer class="footer-main">
-        <p class="footer-text">
-            <span class="copyright">&copy; Copyright: spielmi.ch</span> | <a class="footer-link" href="about.html">Kontakt</a> | <a class="footer-link" href="datenschutzerklaerung.html">Datenschutzerklärung</a>
-        </p>
-    </footer>
-    <script>
-        fetch("misc/header_main.html").then(x => x.text()).then(y => document.getElementById("header-main").innerHTML = y);
-    </script>
+    
+    <footer id="footer-main"></footer>
 </body>
 </html>
