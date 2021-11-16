@@ -1,9 +1,19 @@
 <header class="header-main">
-    <img class="header-logo" src="img/Logo.svg" alt="Logo" style="width:90px;height: 110px;">
+    <a href="index.html">
+        <img class="header-logo" src="img/Logo.svg" alt="Logo">
+    </a>
     <p class="header-text"><span class=header-text-spiel>spiel</span><span class=header-text-mich>mi.ch</span></p>
-    <nav class="header-nav">
+    <nav class="header-nav" id="burgerMenu">
         <a href="trails.html" class="nav-link nav-link-trails">Trails</a>
         <a href="howto.html" class="nav-link nav-link-howto">Wie's funktioniert</a>
         <a href="about.html" class="nav-link nav-link-about">Kontakt</a>
     </nav>
+    <a href="javascript:void(0);" class="burger-button" onclick="toggleBurgerMenu()">
+        <img src="img/Burger.svg" alt="Burger-Icon" class="header-burger-icon" style="width: 45px; height: 40px;">
+    </a>
+    <div id="overlay" onclick="toggleBurgerMenu()"></div>
+    <div class="trail-title-container">
+        <h1 class="trail-title">Spräggele-Challenge</h1>
+        <p class="trail-title" id="trailProgress"></p>
+    </div>
 </header>
