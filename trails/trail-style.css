@@ -80,14 +80,14 @@ body {
     background-color: gainsboro;
     width: 100%;
     margin: 0px;
-    padding: 10px 10px 8px 10px;
+    padding: 7px 10px 5px 10px;
     display: flex;
     justify-content: space-between;
 }
 .trail-title {
-    color: #333;
     margin: 0px;
     padding: 0px;
-    font-size: 18px;
     font-weight: normal;
+    color: rgb(100, 100, 100);
+    font-size: 1em;
 }
