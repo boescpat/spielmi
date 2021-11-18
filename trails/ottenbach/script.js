@@ -7,18 +7,12 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 function startTrail() {
-    // Set trail title:
-    // var trailTitle = document.getElementsByClassName("trail-title-container")[0];
-    // trailTitle.innerHTML = "<h1 class=\"trail-title\">Spräggele-Challenge</h1><p class=\"trail-title\" id=\"trailProgress\"></p>";
-    // Set initial cookie:
-    // document.cookie = "level=0";
-    // Update to initial content:
     callLevel(0);
 }
 
 function submitResult() {
     var result = document.getElementById("fname").value;
-    fetch("resultcheck.php?result=" + result).then(x => x.text()).then(level => {
+    fetch("resultcheck.php?result=" + result,).then(x => x.text()).then(level => {
         level = parseInt(level);
         if (level > 0) {
             callLevel(level);

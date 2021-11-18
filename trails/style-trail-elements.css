@@ -26,4 +26,10 @@
     background-color: greenyellow;
 }
 
-
+/* Horizontal-Pad- and Desktop-Screens */
+/*------------------------*/
+@media (min-width: 700px) {
+    .trail-title-container {
+        display: none;
+    }
+}
