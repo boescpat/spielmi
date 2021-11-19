@@ -8,12 +8,16 @@
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Mobile First
 ------------------------*/
 /* Header */
-.header-main {
+.header-container {
+    height: 61px;
     overflow: hidden;
     background-color: white;
     position: relative;
@@ -90,8 +94,18 @@ body {
     font-weight: normal;
 }
 
+/* Main */
+.main {
+    flex-grow: 1;
+    align-self: center;
+    max-width: 768px;
+    padding: 0px 10px;
+    background-color: white;
+}
+
 /* Footer */
-.footer-main {
+.footer-container {
+    align-self: flex-end;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -155,11 +169,8 @@ body {
     }
 
     /* Footer */
-    .footer-main {
-        display: unset;
-        position: fixed;
-        left: 0;
-        bottom: 0;
+    .footer-container {
+        justify-content: unset;
         padding: 10px 35px;
     }
 }

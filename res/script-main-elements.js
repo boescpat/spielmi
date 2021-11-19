@@ -1,6 +1,6 @@
 /* Fetch header and footer */
-fetch("https://spielmi.ch/res/header-main.html").then(x => x.text()).then(y => document.getElementById("header-main").innerHTML = y);
-fetch("https://spielmi.ch/res/footer-main.html").then(x => x.text()).then(y => document.getElementById("footer-main").innerHTML = y);
+fetch("http://localhost/spielmi/res/header.html").then(x => x.text()).then(y => document.getElementsByClassName("header-container")[0].innerHTML = y);
+fetch("http://localhost/spielmi/res/footer.html").then(x => x.text()).then(y => document.getElementsByClassName("footer-container")[0].innerHTML = y);
 
 /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function toggleBurgerMenu() {
